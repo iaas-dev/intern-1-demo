@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio Editor</title>
 </head>
+
 <body>
     <header>
         <h1>Portfolio Editor</h1>
@@ -12,41 +13,46 @@
 
     <main>
         <section>
-            <h2>Personal Information</h2>
+            <h2>Create Your Portfolio</h2>
 
             <form>
-                <section>
+                <fieldset>
+                    <legend>Personal Information</legend>
+
                     <label for="full-name">Full Name</label>
                     <input type="text" id="full-name" name="full-name">
-                </section>
 
-                <section>
                     <label for="job-title">Job Title</label>
                     <input type="text" id="job-title" name="job-title">
-                </section>
 
-                <section>
                     <label for="bio">About Me</label>
                     <textarea id="bio" name="bio"></textarea>
-                </section>
 
-                <section>
                     <label for="photo-url">Photo URL</label>
                     <input type="text" id="photo-url" name="photo-url">
-                </section>
+                </fieldset>
 
-                <section>
-                    <label for="skill">Skills</label>
+
+                <fieldset>
+                    <legend>Skills</legend>
+
+                    <label for="skill">Skill</label>
                     <input type="text" id="skill" name="skill">
+
                     <button type="button">Add Skill</button>
 
-                    <ul>
-                        <li>Skill examples will appear here</li>
-                    </ul>
-                </section>
+                    <section>
+                        <h3>Skills List</h3>
 
-                <section>
-                    <h2>Projects</h2>
+                        <ul>
+                            <li>Skills will appear here</li>
+                        </ul>
+                    </section>
+                </fieldset>
+
+
+                <fieldset>
+                    <legend>Projects</legend>
 
                     <label for="project-name">Project Name</label>
                     <input type="text" id="project-name" name="project-name">
@@ -61,11 +67,19 @@
 
                     <section>
                         <h3>Project List</h3>
-                        <article>
-                            Project cards will appear here
-                        </article>
+
+                        <ul>
+                            <li>
+                                <article>
+                                    <h4>Project Name</h4>
+                                    <p>Project description will appear here</p>
+                                    <a href="#">Project Link</a>
+                                </article>
+                            </li>
+                        </ul>
                     </section>
-                </section>
+                </fieldset>
+
             </form>
         </section>
     </main>
