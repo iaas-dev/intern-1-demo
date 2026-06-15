@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio Editor</title>
+</head>
+<body>
+  <header>
+    <h1>Portfolio Editor</h1>
+    <p>Fill in your details below to build your portfolio.</p>
+  </header>
+
+  <main>
+    <form id="portfolio-form">
+
+      <section aria-labelledby="basics-heading">
+        <h2 id="basics-heading">About You</h2>
+
+        <label for="full-name">Full name</label>
+        <input type="text" id="full-name" name="full-name" autocomplete="name">
+
+        <label for="job-title">Job title</label>
+        <input type="text" id="job-title" name="job-title" autocomplete="organization-title">
+
+        <label for="bio">Bio / about me</label>
+        <textarea id="bio" name="bio" rows="5"></textarea>
+
+        <label for="photo-url">Photo URL</label>
+        <input type="url" id="photo-url" name="photo-url" inputmode="url">
+      </section>
+
+      <section aria-labelledby="skills-heading">
+        <h2 id="skills-heading">Skills</h2>
+
+        <label for="skill-input">Add a skill</label>
+        <input type="text" id="skill-input" name="skill-input">
+        <button type="button" id="add-skill">Add skill</button>
+
+        <ul id="skills-list" aria-live="polite"></ul>
+      </section>
+
+      <section aria-labelledby="projects-heading">
+        <h2 id="projects-heading">Projects</h2>
+
+        <label for="project-name">Project name</label>
+        <input type="text" id="project-name" name="project-name">
+
+        <label for="project-description">Description</label>
+        <textarea id="project-description" name="project-description" rows="3"></textarea>
+
+        <label for="project-link">Link</label>
+        <input type="url" id="project-link" name="project-link" inputmode="url">
+
+        <button type="button" id="add-project">Add project</button>
+
+        <ul id="projects-list" aria-live="polite"></ul>
+      </section>
+
+    </form>
+  </main>
+</body>
+</html>
